@@ -61,8 +61,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     #libblkid1 \
     #liblzma5 \
     #libstdc++6 \
-    # USB/serial passthrough support
-    #libusb-1.0-0 \
+    USB/serial passthrough support
+    libusb-1.0-0 \
     #udev 
 
 
