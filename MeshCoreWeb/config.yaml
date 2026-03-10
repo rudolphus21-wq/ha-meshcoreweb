@@ -1,0 +1,20 @@
+name: "MeshCoreWeb"
+description: "This is a docker container to run MeshCore and view it from HA"
+version: "0.0.37"
+slug: "mcweb"
+init: false
+host_network: false
+apparmor: false
+panel_admin: false
+ingress: true
+ingress_port: 5800
+ports:
+  5800/tcp: null
+  5900/tcp: null
+  9222/tcp: null
+arch:
+  - amd64
+map:
+  - type: homeassistant_config
+    read_only: False
+    path: /config
