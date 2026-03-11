@@ -18,3 +18,5 @@ map:
   - type: homeassistant_config
     read_only: False
     path: /config
+devices:
+  - /dev/ttyACM0:/dev/ttyACM0
